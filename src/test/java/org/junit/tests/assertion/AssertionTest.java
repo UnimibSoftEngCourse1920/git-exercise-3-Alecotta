@@ -410,6 +410,12 @@ public class AssertionTest {
         assertEquals(1.0, 1.0, 0.0);
         assertEquals(1.0d, 1.0d, 0.0d);
     }
+    
+    @Test 
+    public void assertGreaterThan(int o1, int o2) {
+        assertGreaterThan(6, 5);
+        assertGreaterThan(11,10);
+    }
 
     @Test(expected = AssertionError.class)
     public void notEqualsObjectWithNull() {

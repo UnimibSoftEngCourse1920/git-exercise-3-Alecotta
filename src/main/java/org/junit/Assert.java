@@ -121,7 +121,12 @@ public class Assert {
         }
     }
 
+    public static void assertGreaterThan(int o1, int o2) {
+        assertGreaterThan(o1, o2);
+    }
+    
     private static boolean equalsRegardingNull(Object expected, Object actual) {
+    
         if (expected == null) {
             return actual == null;
         }
