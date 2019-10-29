@@ -31,12 +31,20 @@ public class Assert {
     /**
      * Asserts that a condition is true. If it isn't it throws an
      * {@link AssertionError} with the given message.
+     * @param <T>
      *
      * @param message the identifying message for the {@link AssertionError} (<code>null</code>
      * okay)
      * @param condition condition to be checked
      */
+    
+    
+    static public <T> void  assertGreaterThan(T o1, T o2, java.util.Comparator<T> comparator){
+        assertGreaterThan(o1, o2, comparator);}
+    
+    
     static public void assertTrue(String message, boolean condition) {
+    
         if (!condition) {
             fail(message);
         }
@@ -51,6 +59,7 @@ public class Assert {
     static public void assertTrue(boolean condition) {
         assertTrue(null, condition);
     }
+    
 
     /**
      * Asserts that a condition is false. If it isn't it throws an
