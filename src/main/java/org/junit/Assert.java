@@ -39,8 +39,11 @@ public class Assert {
      * @param condition condition to be checked
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     public static void assertTrue(String message, boolean condition) {
 =======
+=======
+>>>>>>> refs/heads/greater
     
     
     static public <T> void  assertGreaterThan(T o1, T o2, java.util.Comparator<T> comparator){
@@ -49,6 +52,9 @@ public class Assert {
     
     static public void assertTrue(String message, boolean condition) {
     
+<<<<<<< HEAD
+>>>>>>> refs/heads/greater
+=======
 >>>>>>> refs/heads/greater
         if (!condition) {
             fail(message);
