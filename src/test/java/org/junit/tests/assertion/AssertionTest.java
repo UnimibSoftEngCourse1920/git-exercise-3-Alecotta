@@ -16,7 +16,6 @@ import static org.junit.Assert.fail;
 
 import java.io.IOException;
 import java.math.BigDecimal;
-import java.util.Comparator;
 
 import org.junit.Assert;
 import org.junit.ComparisonFailure;
